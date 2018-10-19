@@ -81,11 +81,17 @@
         background: radial-gradient(at 85% 10%, #dcdcdc, #b0b0b0, #a6a9ad);
     }
 
-    #app {
-        width: 1366px;
-        position: relative;
-        left: -683px;
-        margin-left: 50%;
-        background-color: #3a8ee6;
+
+    /* ----------- Large Screens ----------- */
+    @media (min-width: 1500px) {
+        #app {
+            width: 1440px;
+            position: relative;
+            left: calc( 1440px / -2);
+            margin-left: 50%;
+        }
+
     }
+
+
 </style>
