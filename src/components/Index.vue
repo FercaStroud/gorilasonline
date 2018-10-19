@@ -3,7 +3,7 @@
         <vue-particles class="particles-index"
                        color="#dedede"
                        :particleOpacity="0.7"
-                       :particlesNumber="110"
+                       :particlesNumber="130"
                        shapeType="circle"
                        :particleSize="3"
                        linesColor="#f3f3f3"
@@ -11,12 +11,8 @@
                        :lineLinked="true"
                        :lineOpacity="0.4"
                        :linesDistance="80"
-                       :moveSpeed="5"
+                       :moveSpeed="8"
         ></vue-particles>
-
-
-
-
         <div class="block">
             <el-carousel  width="280px"
                           height="557px">
@@ -28,7 +24,6 @@
                             Amet
                         </p>
                     </div>
-
                     <parallax-container class="parallax-go" @click="console.log('ok')">
                         <parallax-element class="iphoneGo" :parallaxStrength="10" :type="'translation'">
                         </parallax-element>
@@ -36,13 +31,7 @@
                             <img src="../assets/img/iphonex-logo.png"/>
                         </parallax-element>
                     </parallax-container>
-
-
                 </el-carousel-item>
-
-
-
-
                 <el-carousel-item>
                     <div class="container-text-home">
                         <p>
@@ -51,7 +40,6 @@
                             Amet
                         </p>
                     </div>
-
                     <parallax-container class="parallax-go" >
                         <parallax-element class="iphoneGo" :parallaxStrength="10" :type="'translation'">
                         </parallax-element>
@@ -59,17 +47,9 @@
                             <img src="../assets/img/iphonex-logo.png"/>
                         </parallax-element>
                     </parallax-container>
-
-
                 </el-carousel-item>
             </el-carousel>
         </div>
-
-
-
-
-
-
     </section>
 </template>
 
@@ -126,7 +106,6 @@
         width: 100%;
     }
     .particles-index{
-        height: 100%;
         position: absolute;
         width: 100%;
         margin-top: -110px;

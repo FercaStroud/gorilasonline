@@ -8,26 +8,27 @@ import Contact from '@/components/Contact'
 Vue.use(Router)
 
 export default new Router({
+    mode: 'history',
     routes: [
         {
             path: '/',
             name: 'index',
-            component: Index
+            component: Index,
         },
         {
             path: '/acercade',
             name: 'aboutus',
-            component: AboutUs
+            component: AboutUs,
         },
         {
             path: '/portafolio',
             name: 'portfolio',
-            component: Portfolio
+            component: Portfolio,
         },
         {
             path: '/contacto',
             name: 'contact',
-            component: Contact
+            component: Contact,
         },
     ]
 })

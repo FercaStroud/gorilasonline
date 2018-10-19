@@ -24,7 +24,12 @@
                 <navigator/>
             </el-header>
             <el-main>
-                <router-view/>
+                <transition
+                        mode="out-in"
+                        name="slide-left"
+                >
+                    <router-view/>
+                </transition>
             </el-main>
         </el-container>
     </div>
@@ -33,23 +38,51 @@
 
 <script>
     import Navigator from "./components/Navigator";
-
     export default {
         name: 'App',
         components: {Navigator},
         data() {
-            return {}
+            return {
+            };
+        },
+        created() {
+
         },
         mounted: function () {
             //console.log(this.$store.state.application.title)
         },
-        methods: {}
+        methods: {
+
+        }
     }
 </script>
 
 <style lang="scss">
     $main-color: #ff3d00;
     $secondary-color: #2c3e50;
+
+    .slide-left-enter-active,
+    .slide-left-leave-active,
+    .slide-right-enter-active,
+    .slide-right-leave-active {
+        transition-duration: 0.5s;
+        transition-property: height, opacity, transform;
+        transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+        overflow: hidden;
+    }
+
+    .slide-left-enter,
+    .slide-right-leave-active {
+        opacity: 0;
+        transform: translate(2em, 0);
+    }
+
+    .slide-left-leave-active,
+    .slide-right-enter {
+        opacity: 0;
+        transform: translate(-2em, 0);
+    }
+
     body {
         margin: 0px;
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -66,16 +99,19 @@
     .is-bold {
         font-weight: bold;
     }
-    .buttonGo{
+
+    .buttonGo {
         width: 100%;
         text-transform: uppercase;
         color: $secondary-color !important;
     }
+
     .buttonGo:hover {
         width: 100%;
         background-color: $secondary-color;
         color: #fffefe;
     }
+
     .go {
         color: $main-color;
         top: -1px;
@@ -91,13 +127,12 @@
         background: radial-gradient(at 85% 10%, #dcdcdc, #b0b0b0, #a6a9ad);
     }
 
-
     /* ----------- Large Screens ----------- */
     @media (min-width: 1500px) {
         #app {
             width: 1440px;
             position: relative;
-            left: calc( 1440px / -2);
+            left: calc(1440px / -2);
             margin-left: 50%;
         }
 
