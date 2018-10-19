@@ -11,7 +11,9 @@ import 'vue-loaders/dist/vue-loaders.css';
 import * as VueLoaders from 'vue-loaders';
 import VueResource from 'vue-resource';
 import VueMouseParallax from 'vue-mouse-parallax'
+import VueParticles from 'vue-particles'
 
+Vue.use(VueParticles)
 Vue.use(ElementUI);
 Vue.use(VueResource);
 Vue.use(VueLoaders);

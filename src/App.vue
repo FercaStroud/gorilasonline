@@ -20,7 +20,7 @@
         </div>
 
         <el-container id="app">
-            <el-header>
+            <el-header style="background-color: rgba(255,255,255,.3)">
                 <navigator/>
             </el-header>
             <el-main>
@@ -49,13 +49,14 @@
 
 <style lang="scss">
     $main-color: #ff3d00;
+    $secondary-color: #2c3e50;
     body {
         margin: 0px;
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
-        color: #2c3e50;
+        color: $secondary-color;
     }
 
     h1, .go {
@@ -65,7 +66,16 @@
     .is-bold {
         font-weight: bold;
     }
-
+    .buttonGo{
+        width: 100%;
+        text-transform: uppercase;
+        color: $secondary-color !important;
+    }
+    .buttonGo:hover {
+        width: 100%;
+        background-color: $secondary-color;
+        color: #fffefe;
+    }
     .go {
         color: $main-color;
         top: -1px;
