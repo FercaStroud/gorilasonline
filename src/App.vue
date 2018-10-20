@@ -127,6 +127,13 @@
         background: radial-gradient(at 85% 10%, #dcdcdc, #b0b0b0, #a6a9ad);
     }
 
+    .fullSection {
+        margin-top: -80px;
+        z-index: -1;
+        position: absolute;
+        width: 96%;
+    }
+
     /* ----------- Large Screens ----------- */
     @media (min-width: 1500px) {
         #app {

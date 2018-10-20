@@ -12,8 +12,10 @@ import * as VueLoaders from 'vue-loaders';
 import VueResource from 'vue-resource';
 import VueMouseParallax from 'vue-mouse-parallax'
 import VueParticles from 'vue-particles'
+import VueFullPage from 'vue-fullpage.js'
 
-Vue.use(VueParticles)
+Vue.use(VueFullPage);
+Vue.use(VueParticles);
 Vue.use(ElementUI);
 Vue.use(VueResource);
 Vue.use(VueLoaders);
@@ -23,8 +25,8 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router, store,
-  components: { App },
-  template: '<App/>',
+    el: '#app',
+    router, store,
+    components: {App},
+    template: '<App/>',
 })
