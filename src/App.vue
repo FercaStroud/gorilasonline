@@ -20,7 +20,7 @@
         </div>
 
         <el-container id="app">
-            <el-header style="background-color: rgba(255,255,255,.3)">
+            <el-header style="z-index: 2; background-color: rgba(255,255,255,.3)">
                 <navigator/>
             </el-header>
             <el-main>
@@ -134,13 +134,44 @@
 
     .fullSection {
         margin-top: -80px;
-        z-index: -1;
         position: absolute;
         width: 100%;
     }
-    .section-container{
-        position: absolute;
+    .margin-container{
         margin-top: 80px;
+    }
+    .section-container{
+        //position: absolute;
+        height: inherit;
+        width: 100%;
+    }
+    .left-title-container{
+        background-color: white;
+        float: left;
+        width: 50px;
+        height: 100%;
+    }
+    .left-title-container img{
+        top: calc(50% - 100px);
+        position: relative;
+    }
+    .right-container{
+        float: right;
+        background-color: #e6e6e7;
+        position: relative;
+        height: inherit;
+        width: calc(100% - 50px);
+        background-image: url("assets/img/aboutusbg.png");
+        background-repeat: repeat-x;
+    }
+    .content-container{
+         margin-top: 80px;
+    }
+    .go-color{
+        color:$main-color
+    }
+    .go-text{
+        text-align: left;
     }
     /* ----------- Large Screens ----------- */
     @media (min-width: 1500px) {
