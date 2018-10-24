@@ -1,19 +1,30 @@
 <template>
-    <section class="">
-        <vue-particles class="particles-index"
-                       color="#dedede"
-                       :particleOpacity="0.7"
-                       :particlesNumber="130"
-                       shapeType="circle"
-                       :particleSize="3"
-                       linesColor="#f3f3f3"
-                       :linesWidth="1"
-                       :lineLinked="true"
-                       :lineOpacity="0.4"
-                       :linesDistance="80"
-                       :moveSpeed="8"
-        ></vue-particles>
-        <div class="block">
+    <section class="fullSection">
+        <full-page ref="fullpage" :options="options" id="fullpage">
+            <div class="section">
+                <vue-particles class="particles-index"
+                               color="#dedede"
+                               :particleOpacity="0.7"
+                               :particlesNumber="130"
+                               shapeType="circle"
+                               :particleSize="3"
+                               linesColor="#f3f3f3"
+                               :linesWidth="1"
+                               :lineLinked="true"
+                               :lineOpacity="0.4"
+                               :linesDistance="80"
+                               :moveSpeed="8"
+                ></vue-particles>
+            </div>
+            <div class="section">
+                <div class="section-container">
+                    Second section ...
+                </div>
+            </div>
+        </full-page>
+    </section>
+
+        <!--<div class="block">
             <el-carousel  width="280px"
                           height="557px">
                 <el-carousel-item>
@@ -49,8 +60,7 @@
                     </parallax-container>
                 </el-carousel-item>
             </el-carousel>
-        </div>
-    </section>
+        </div>-->
 </template>
 
 <script>
@@ -59,6 +69,10 @@
         data() {
             return {
                 activeIndex: '1',
+                options: {
+                    anchors: ['page1', 'page2', 'page3'],
+                    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+                },
             };
         },
         methods: {

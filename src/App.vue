@@ -50,6 +50,7 @@
         },
         mounted: function () {
             //console.log(this.$store.state.application.title)
+
         },
         methods: {
 
@@ -91,7 +92,10 @@
         text-align: center;
         color: $secondary-color;
     }
-
+    .el-main {
+        padding: 0px;
+        padding-top: 20px;
+    }
     h1, .go {
         font-family: 'Avenir', Helvetica, Arial, sans-serif !important;
     }
@@ -120,6 +124,7 @@
 
     body, html {
         height: 100%;
+        overflow: hidden;
     }
 
     body {
@@ -131,9 +136,12 @@
         margin-top: -80px;
         z-index: -1;
         position: absolute;
-        width: 96%;
+        width: 100%;
     }
-
+    .section-container{
+        position: absolute;
+        margin-top: 80px;
+    }
     /* ----------- Large Screens ----------- */
     @media (min-width: 1500px) {
         #app {
