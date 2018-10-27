@@ -141,7 +141,7 @@
         margin-top: 80px;
     }
     .section-container{
-        //position: absolute;
+        position: absolute;
         height: inherit;
         width: 100%;
     }
@@ -161,8 +161,6 @@
         position: relative;
         height: inherit;
         width: calc(100% - 50px);
-        background-image: url("assets/img/aboutusbg.png");
-        background-repeat: repeat-x;
     }
     .content-container{
          margin-top: 80px;
