@@ -20,13 +20,13 @@ export default new Vuex.Store({
             namespaced: true,
             state: {
                 loader: false,
-                activeSection:'PublicMap',
-                title:'Torreón sin Baches',
-                drawer:{
+                activeSection: 'PublicMap',
+                title: 'Torreón sin Baches',
+                drawer: {
                     left: false,
                     right: false
                 },
-                config:{
+                config: {
                     //server: 'http://torreonsinbaches.com/',
                     //api: 'http://enmedioasociados.com/apitorreon/public/',
                     //assets: 'static/',
@@ -43,6 +43,8 @@ export default new Vuex.Store({
                     isAdmin: null
                 },
             },
+            mutations: {},
+            actions: {}
         },
     }
 })
