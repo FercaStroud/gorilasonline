@@ -23,3 +23,8 @@ yarn-error.log*
 *.sln
 *.sw*
 !/node_modules/dogma/
+!/node_modules/dogma/fonts/
+!/node_modules/dogma/js/
+!/node_modules/dogma/images/
+!/node_modules/dogma/php/
+!/node_modules/dogma/css/
