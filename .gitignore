@@ -1,6 +1,5 @@
 .DS_Store
 node_modules
-!node_modules/dogma/*
 /dist
 
 /tests/e2e/videos/
@@ -23,3 +22,4 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+!/node_modules/dogma/
