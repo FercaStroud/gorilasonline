@@ -21,7 +21,7 @@
                             <a href="#">contacto@appsgorilasonline.com</a>
                         </li>
                     </ul>
-                    <a href="#" class=" btn anim-button   trans-btn   transition  fl-l showform"><span>Write us</span><i
+                    <a href="#" class=" btn anim-button   trans-btn   transition  fl-l showform"><span>Escríbemos</span><i
                                 class="fa fa-eye"></i></a>
                 </div>
             </section>
@@ -35,15 +35,15 @@
                     <div id="contact-form">
                         <div id="message"></div>
                         <form method="post" action="" name="contactform" id="contactform">
-                            <input name="name" type="text" id="name" onClick="this.select()" value="Name">
+                            <input name="name" type="text" id="name" onClick="this.select()" value="Nombre">
                             <input name="email" type="text" id="email" onClick="this.select()" value="E-mail">
-                            <input type="text" name="phone" id="phone" onClick="this.select()" value="Phone"/>
-                            <textarea name="comments" id="comments" onClick="this.select()">Message</textarea>
+                            <input type="text" name="phone" id="phone" onClick="this.select()" value="Teléfono"/>
+                            <textarea name="comments" id="comments" onClick="this.select()">Mensaje</textarea>
                             <div class="verify-wrap">
                                 <span class="verify-text"> How many gnomes were in the story about the "Snow-white" ?</span>
                                 <input name="verify" type="text" id="verify" onClick="this.select()" value="0">
                             </div>
-                            <button id="submit"><span>Send </span> <i class="fa fa-long-arrow-right"></i>
+                            <button id="submit"><span>Enviar </span> <i class="fa fa-long-arrow-right"></i>
                             </button>
                         </form>
                     </div>
