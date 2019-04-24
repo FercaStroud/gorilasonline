@@ -64,6 +64,7 @@
                                  @mouseover="hoverCard(index)"
                                  @mouseout="hoverCard(-1)"
                                  :ref="`card_${index}`"
+                                 @click="openModal=true"
                             >
                                 <img class="card-image" :class="{'selected': isSelected(index)}"
                                      :src="card.image">
@@ -96,6 +97,27 @@
                 </div>
             </div>
         </full-page>
+
+        <vs-popup :title="modalDetails.title" :active.sync="openModal">
+            <vs-row>
+                <vs-col vs-type="flex"
+                        vs-justify="center"
+                        vs-align="center"
+                        vs-w="6"
+                        vs-lg="6"
+                        vs-md="6"
+                        vs-sm="12"
+                        vs-xs="12"
+                >
+                    <img src="http://lorempixel.com/720/1024/"/>
+                </vs-col>
+            </vs-row>
+
+            <p>
+               {{ modalDetails.description }}
+            </p>
+        </vs-popup>
+
     </div>
 </template>
 
@@ -106,6 +128,18 @@
         components: {},
         data() {
             return {
+                modalDetails: {
+                    title: '',
+                    images:[
+
+                    ],
+                    description: '',
+                },
+                openModal: false,
+                window: {
+                    width: 0,
+                    height: 0
+                },
                 selectedCard: -1,
                 activeIndex: '1',
                 options: {
@@ -117,7 +151,7 @@
                         'tecnología',
                         'contacto',
                     ],
-                    autoScrolling: false,
+                    autoScrolling: true,
                     licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                     sectionsColor: ['#ffffff', '#ffffff', '#f7f7f8', '#f7f7f8', '#f7f7f8'],
                 },
@@ -162,6 +196,13 @@
                 ],
             };
         },
+        created() {
+            window.addEventListener('resize', this.handleResize)
+            this.handleResize();
+        },
+        destroyed() {
+            window.removeEventListener('resize', this.handleResize)
+        },
         methods: {
             hoverCard(selectedIndex) {
                 this.selectedCard = selectedIndex
@@ -182,6 +223,12 @@
             },
             isSelected(cardIndex) {
                 return this.selectedCard === cardIndex
+            },
+            handleResize() {
+                this.window.width = window.innerWidth;
+                if (this.window.width < 800) {
+                    this.options.autoScrolling = false;
+                }
             }
         }
     }
@@ -211,6 +258,7 @@
             background-size: cover;
             background-image: url("../assets/images/responsive-gallery-img.jpg");
         }
+
         .section-container {
             width: 95%;
             margin-left: 2.5%;
