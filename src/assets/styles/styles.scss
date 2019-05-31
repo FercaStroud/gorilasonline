@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
-
+html {
+  scroll-behavior: smooth;
+}
 .russo{
   font-family: 'Russo One';
 }
@@ -8,6 +10,10 @@ $go-color: #f16338;
 
 :root {
   --mainColor: #f16338;
+}
+::selection {
+  background-color: $go-color;
+  color: white;
 }
 
 .go-color {

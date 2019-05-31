@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <Slider/>
+    <Contacto/>
   </div>
 </template>
 
@@ -8,9 +9,11 @@
 // @ is an alias to /src
 
 import Slider from "../components/Home/Slider";
+import Contacto from "../components/Home/Contacto";
 export default {
   name: 'home',
   components: {
+    Contacto,
     Slider
   }
 }

@@ -1,5 +1,5 @@
 <template>
-    <section class="">
+    <section class="" id="inicio">
         <b-container>
             <b-row>
                 <b-col sm="12" md="6">
@@ -16,29 +16,12 @@
                 </b-col>
                 <b-col sm="12" offset-md="1" md="5">
                     <parallax-container class="">
-                        <parallax-element id="paralla-element-4"
+                        <parallax-element 
                                           class="phone-parallax-container"
                                           :parallaxStrength="-1" :type="'translation'">
-                            <img src="../../assets/images/parallax-4.png">
+                            <img src="../../assets/images/parallax0.png">
                         </parallax-element>
 
-                        <parallax-element id="paralla-element-3"
-                                          class="phone-parallax-container"
-                                          :parallaxStrength="1" :type="'translation'">
-                            <img src="../../assets/images/parallax-3.png">
-                        </parallax-element>
-
-                        <parallax-element id="paralla-element-2"
-                                          class="phone-parallax-container"
-                                          :parallaxStrength="-1" :type="'translation'">
-                            <img src="../../assets/images/parallax-2.png">
-                        </parallax-element>
-
-                        <parallax-element id="paralla-element-1"
-                                          class="phone-parallax-container"
-                                          :parallaxStrength="1" :type="'translation'">
-                            <img src="../../assets/images/parallax-1.png">
-                        </parallax-element>
                     </parallax-container>
                 </b-col>
             </b-row>
@@ -48,7 +31,10 @@
 
 <script>
     export default {
-        name: "Slider"
+        name: "Slider",
+        mounted: function () {
+
+        }
     }
 </script>
 
@@ -68,7 +54,6 @@
     }
 
     .phone-parallax-container {
-        position: absolute;
     }
 
     .parallax-element {
@@ -110,11 +95,11 @@
     @media (max-width: 1199px) {
         .slider-text-container {
             font-size: 4em;
-            margin-top: 250px;
+            margin-top: 350px;
             line-height: 56px;
         }
         .parallax-element {
-            margin-top: 50px;
+            margin-top: 200px;
 
             img {
                 max-height: 450px;
@@ -125,11 +110,11 @@
     @media (max-width: 991px) {
         .slider-text-container {
             font-size: 3em;
-            margin-top: 81px;
+            margin-top: 200px;
             line-height: 46px;
         }
         .parallax-element {
-            margin-top: 50px;
+            margin-top: 150px;
 
             img {
                 max-height: 250px;
@@ -140,7 +125,7 @@
     @media (max-width: 767px) {
         .slider-text-container {
             width: 80%;
-            margin-left: 10%;
+            margin-left: 15%;
         }
         .parallax-element {
             margin-top: 50px;
@@ -150,22 +135,25 @@
             float: left;
 
             img {
-                max-height: 250px;
+               width: 300px;
+                height: auto !important;
+                max-height: none;
+                margin-left: 50%;
+                position: relative;
+                left: -61px;
             }
         }
-        #paralla-element-1, #paralla-element-2, #paralla-element-3, #paralla-element-4 {
-            left: 0px;
-        }
+
     }
 
     @media (max-width: 475px) {
         .parallax-element {
             img {
-                max-height: 150px;
+                width: 300px;
+
             }
         }
         #paralla-element-4 {
-            margin-left: 10%;
         }
         .slider-text-container {
             font-size: 2em;

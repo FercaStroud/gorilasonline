@@ -8,13 +8,14 @@
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
             <b-collapse id="nav-collapse" is-nav>
-                <!--<b-navbar-nav>-->
-                    <!--<b-nav-item href="#"><span class="go-color">No</span>sotros</b-nav-item>-->
-                    <!--<b-nav-item href="#"><span class="go-color">Pr</span>oductos</b-nav-item>-->
-                    <!--<b-nav-item href="#"><span class="go-color">Po</span>rtafolio</b-nav-item>-->
-                    <!--<b-nav-item href="#"><span class="go-color">Te</span>cnología</b-nav-item>-->
-                    <!--<b-nav-item href="#"><span class="go-color">Co</span>ntacto</b-nav-item>-->
-                <!--</b-navbar-nav>-->
+                <b-navbar-nav>
+                    <b-nav-item href="#inicio"><span class="go-color">In</span>icio</b-nav-item>
+                    <b-nav-item href="#nosotros"><span class="go-color">No</span>sotros</b-nav-item>
+                    <b-nav-item href="#productos"><span class="go-color">Pr</span>oductos</b-nav-item>
+                    <b-nav-item href="#portafolio"><span class="go-color">Po</span>rtafolio</b-nav-item>
+                    <b-nav-item href="#tecnologia"><span class="go-color">Te</span>cnología</b-nav-item>
+                    <b-nav-item href="#contacto"><span class="go-color">Co</span>ntacto</b-nav-item>
+                </b-navbar-nav>
             </b-collapse>
         </b-container>
     </b-navbar>
