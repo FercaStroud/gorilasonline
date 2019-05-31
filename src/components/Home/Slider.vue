@@ -16,12 +16,11 @@
                 </b-col>
                 <b-col sm="12" offset-md="1" md="5">
                     <parallax-container class="">
-                        <parallax-element 
-                                          class="phone-parallax-container"
-                                          :parallaxStrength="-1" :type="'translation'">
+                        <parallax-element
+                                class="phone-parallax-container"
+                                :parallaxStrength="-1" :type="'translation'">
                             <img src="../../assets/images/parallax0.png">
                         </parallax-element>
-
                     </parallax-container>
                 </b-col>
             </b-row>
@@ -62,21 +61,6 @@
         img {
             max-height: 600px;
         }
-    }
-
-    #paralla-element-1 {
-    }
-
-    #paralla-element-2 {
-        left: 90px;
-    }
-
-    #paralla-element-3 {
-        left: 150px;
-    }
-
-    #paralla-element-4 {
-        left: 200px;
     }
 
     span {
@@ -135,7 +119,7 @@
             float: left;
 
             img {
-               width: 300px;
+                width: 300px;
                 height: auto !important;
                 max-height: none;
                 margin-left: 50%;
@@ -146,22 +130,32 @@
 
     }
 
-    @media (max-width: 475px) {
+    @media (max-width: 500px) {
         .parallax-element {
+            width: initial;
+            margin-left: initial;
+            position: initial;
+            float: initial;
+            margin-top: 10%;
+
             img {
                 width: 300px;
-
+                height: initial;
+                max-height: initial;
+                margin-left: 50%;
+                position: relative;
+                left: -150px;
             }
         }
-        #paralla-element-4 {
-        }
+
         .slider-text-container {
-            font-size: 2em;
-            margin-top: 147px;
-            line-height: 33px;
+            width: 100%;
+            margin-left: 0;
+            line-height: 34px;
+            margin-top: 30%;
+            font-size: 200%;
+            text-align: center;
         }
-
-
     }
 
 </style>
