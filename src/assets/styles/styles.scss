@@ -43,6 +43,6 @@ section {
 
 @media (width: 991px) {
   body, html, section, div {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 }
