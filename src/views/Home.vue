@@ -1,6 +1,7 @@
 <template>
     <div class="home">
         <Slider/>
+        <About/>
         <Tecnologias/>
         <Contacto/>
     </div>
@@ -12,10 +13,12 @@
     import Slider from "../components/Home/Slider";
     import Contacto from "../components/Home/Contacto";
     import Tecnologias from "../components/Home/Tecnologias";
+    import About from "../components/Home/About";
 
     export default {
         name: 'home',
         components: {
+            About,
             Tecnologias,
             Contacto,
             Slider

@@ -61,6 +61,7 @@ section {
   padding-bottom: 20px;
 }
 
+
 @media (min-width: 1280px) {
   #title-bg-text {
     font-size: 4.5vw;
@@ -70,7 +71,15 @@ section {
     margin-top: -6.3vw;
   }
 }
-
+@media (min-width: 2092px) {
+  #title-bg-text {
+    font-size: 5.5em;
+  }
+  #title-fg-text {
+    font-size: 5em;
+    margin-top: -127px;
+  }
+}
 @media (max-width: 991px) {
   #title-bg-text {
     font-size: 8vw;

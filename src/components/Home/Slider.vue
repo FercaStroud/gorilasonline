@@ -75,7 +75,16 @@
             text-shadow: none;
         }
     }
+    @media (min-width: 2092px) {
+        .parallax-element {
+            margin-top: 300px;
 
+            img {
+                max-height: 700px;
+            }
+        }
+
+    }
     @media (max-width: 1280px) {
         .slider-text-container {
             margin-top: 310px;
