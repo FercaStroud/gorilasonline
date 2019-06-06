@@ -6,7 +6,7 @@
                     <div style="text-align: center">
                         Una empresa de
                     </div>
-                    <img style="width: 195px; position:relative; margin-left: 50%; left: -97.5px;"
+                    <img id="logo-footer"
                          src="../../assets/images/enmedio-logo.png">
                 </b-col>
                 <b-col sm="12" md="4">
@@ -36,10 +36,10 @@
                         CONTACTO
                     </div>
                     <b-row>
-                        <b-col sm="12" md="9">
-                            <b-form-input v-model="text" placeholder="Déjanos tu E-mail"></b-form-input>
+                        <b-col sm="12" md="12">
+                            <b-form-input placeholder="Déjanos tu E-mail"></b-form-input>
                         </b-col>
-                        <b-col sm="12" md="3">
+                        <b-col sm="12" md="3" style="margin-top: 8px; margin-bottom: 8px">
                             <b-btn class="russo" id="send-btn">Enviar</b-btn>
                         </b-col>
                     </b-row>
@@ -59,6 +59,13 @@
 </script>
 
 <style scoped>
+    #logo-footer {
+        width: 195px;
+        position: relative;
+        margin-left: 50%;
+        left: -97.5px;
+    }
+
     #contacto {
         background-color: #393939;
         color: white;
@@ -78,15 +85,27 @@
     #wantTo {
         letter-spacing: 3px;
     }
-    .left-mid-pos{
+
+    .left-mid-pos {
         text-align: left
     }
+
+    @media (max-width: 991px) {
+        #logo-footer {
+            position: initial;
+            left: initial;
+            width: 40%;
+            margin-left: 30%
+        }
+    }
+
     @media (max-width: 767px) {
-        .left-mid-pos{
+        .left-mid-pos {
             text-align: center;
             margin-top: 20px;
         }
-        #send-btn{
+
+        #send-btn {
             width: 100%;
             margin-top: 5px;
         }

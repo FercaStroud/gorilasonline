@@ -1,32 +1,33 @@
 <template>
-  <div class="home">
-    <Slider/>
-    <Tecnologias/>
-    <Contacto/>
-  </div>
+    <div class="home">
+        <Slider/>
+        <Tecnologias/>
+        <Contacto/>
+    </div>
 </template>
 
 <script>
-// @ is an alias to /src
+    // @ is an alias to /src
 
-import Slider from "../components/Home/Slider";
-import Contacto from "../components/Home/Contacto";
-import Tecnologias from "../components/Home/Tecnologias";
-export default {
-  name: 'home',
-  components: {
-    Tecnologias,
-    Contacto,
-    Slider
-  }
-}
+    import Slider from "../components/Home/Slider";
+    import Contacto from "../components/Home/Contacto";
+    import Tecnologias from "../components/Home/Tecnologias";
+
+    export default {
+        name: 'home',
+        components: {
+            Tecnologias,
+            Contacto,
+            Slider
+        }
+    }
 </script>
 
 <style scoped>
-  .home{
-    top: 0;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-  }
+    .home {
+        top: 0;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
 </style>

@@ -2,7 +2,7 @@
     <section class="" id="inicio">
         <b-container>
             <b-row>
-                <b-col sm="12" md="6">
+                <b-col sm="12" md="6" class="home-responsive" style="z-index: 1">
                     <div class="slider-text-container russo">
                         <strong>
                             PLATAFORMAS<br/>
@@ -14,7 +14,7 @@
                         </span>
                     </div>
                 </b-col>
-                <b-col sm="12" offset-md="1" md="5">
+                <b-col sm="12" md="6" class="home-responsive" style="z-index: 0">
                     <parallax-container class="">
                         <parallax-element
                                 class="phone-parallax-container"
@@ -76,10 +76,19 @@
         }
     }
 
+    @media (max-width: 1280px) {
+        .slider-text-container {
+            margin-top: 310px;
+        }
+        .parallax-element {
+            margin-top: 120px;
+        }
+    }
+
     @media (max-width: 1199px) {
         .slider-text-container {
             font-size: 4em;
-            margin-top: 350px;
+            margin-top: 310px;
             line-height: 56px;
         }
         .parallax-element {
@@ -92,69 +101,40 @@
     }
 
     @media (max-width: 991px) {
+        .home-responsive {
+            flex: initial !important;
+            max-width: inherit !important;
+        }
         .slider-text-container {
-            font-size: 3em;
-            margin-top: 200px;
-            line-height: 46px;
-        }
-        .parallax-element {
-            margin-top: 150px;
-
-            img {
-                max-height: 250px;
-            }
-        }
-    }
-
-    @media (max-width: 767px) {
-        .slider-text-container {
-            width: 80%;
-            margin-left: 15%;
-        }
-        .parallax-element {
-            margin-top: 50px;
-            width: auto;
-            margin-left: 1%;
-            position: relative;
-            float: left;
-
-            img {
-                width: 300px;
-                height: auto !important;
-                max-height: none;
-                margin-left: 50%;
-                position: relative;
-                left: -61px;
-            }
-        }
-
-    }
-
-    @media (max-width: 500px) {
-        .parallax-element {
-            width: initial;
-            margin-left: initial;
-            position: initial;
-            float: initial;
-            margin-top: 10%;
-
-            img {
-                width: 300px;
-                height: initial;
-                max-height: initial;
-                margin-left: 50%;
-                position: relative;
-                left: -150px;
-            }
-        }
-
-        .slider-text-container {
-            width: 100%;
-            margin-left: 0;
-            line-height: 34px;
-            margin-top: 30%;
-            font-size: 200%;
+            font-size: 8vw;
+            margin-top: 27vh;
+            line-height: 8vh;
             text-align: center;
+        }
+        .parallax-element {
+            margin-top: -40vh;
+
+            img {
+                max-height: 67vh;
+                margin-left: -15vh;
+                opacity: 0.2;
+            }
+        }
+        span {
+            color: #f16338;
+            -webkit-text-stroke: 0 #f16338;
+            text-shadow: none;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .slider-text-container {
+            font-size: 12vw;
+            line-height: 6vh;
+            margin-top: 37vh;
+        }
+        .parallax-element {
+            margin-top: -40vh;
         }
     }
 
