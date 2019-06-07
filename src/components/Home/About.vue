@@ -1,5 +1,5 @@
 <template>
-    <section class="" id="nosotros" style="height: auto !important; background-color: #ffffff">
+    <section class="" id="nosotros" style="height: auto !important; background-color: #ffffff; padding-bottom: 20px">
         <b-container>
             <b-row class="justify-content-md-center russo" style="padding-top: 15px">
                 <b-col cols="12" md="auto">
@@ -7,7 +7,7 @@
                     <div id="title-fg-text"><span class="go-color">NO</span>SOTROS</div>
                 </b-col>
             </b-row>
-            <b-row class="justify-content-md-center">
+            <b-row class="justify-content-md-center" style="padding-bottom: 40px">
                 <p class="go-text">
                     En <strong>GORILAS</strong> comprendemos la amplia aplicación y utilidad para las marcas
                     de la tecnología. Es por ello que ofrecemos diversas herramientas que
