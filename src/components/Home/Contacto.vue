@@ -2,20 +2,20 @@
     <div class="" id="contacto">
         <b-container style="padding-bottom: 30px; padding-top: 30px">
             <b-row>
-                <b-col sm="12" md="4">
+                <!--<b-col sm="12" md="4">
                     <div style="text-align: center">
                         Una empresa de
                     </div>
                     <img id="logo-footer"
                          src="../../assets/images/enmedio-logo.png">
-                </b-col>
-                <b-col sm="12" md="4">
+                </b-col>-->
+                <!--<b-col sm="12" md="6">
                     <div class="russo go-color left-mid-pos" id="wantTo">
                         ¿QUIERES COTIZAR?
                     </div>
                     <div>
-                        <p class="left-mid-pos">
-                            Calle Naranjos #124, Col. Torreón Jardin <br/>
+                     <p class="left-mid-pos">
+                      Calle Naranjos #124, Col. Torreón Jardin <br/>
                             <span class="go-color russo">WhatsApp</span> (871) 107 6853 <br/>
                             <span class="go-color russo">Tel</span> (871) 793 02 30 y 31 <br/>
                             <a href="https://www.facebook.com/GorilasOnline/"
@@ -29,22 +29,24 @@
                             </a>
                         </p>
                     </div>
-                </b-col>
-                <b-col sm="12" md="4">
+                </b-col>-->
+                <b-col sm="12" md="12">
                     <div class="russo go-color left-mid-pos"
                          style="letter-spacing:3px;">
-                        CONTACTO
+                        ¿QUIERES COTIZAR?<br/>
+                        <a style="color: white;" href="mailto:hola@appsgorilasonline.com">hola@appsgorilasonline.com</a>
                     </div>
                     <b-row>
-                        <b-col sm="12" md="12">
+                        <!--<b-col sm="12" md="4">
                             <b-form-input placeholder="Déjanos tu E-mail"></b-form-input>
                         </b-col>
-                        <b-col sm="12" md="3" style="margin-top: 8px; margin-bottom: 8px">
+                        <b-col sm="12" md="4" style="margin-top: 0px; margin-bottom: 8px">
                             <b-btn class="russo" id="send-btn">Enviar</b-btn>
-                        </b-col>
+                        </b-col>-->
                     </b-row>
-                    <p class="left-mid-pos">
-                        Te responderemos a la brevedad para ofrecerte una solución
+                    <p class="left-mid-pos russo">
+                       <!-- Te responderemos a la brevedad para ofrecerte una solución-->
+                        Hecha con <span class="go-color">&#9829;</span> por <span class="go-color">G</span>orilas <span class="go-color">O</span>nline
                     </p>
                 </b-col>
             </b-row>

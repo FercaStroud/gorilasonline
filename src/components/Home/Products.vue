@@ -9,21 +9,10 @@
                 <p style="font-size: 1.3em">Da click y conoce más sobre nuestras soluciones a gran escala en los siguientes rubros:</p>
             </b-row>
             <b-row class="justify-content-md-center" style="padding-top: 15px">
-                <b-col cols="12" sm="12" md="3">
-                    <img style="width: 100%; cursor:pointer;" src="../../assets/images/product1.jpg">
-                </b-col>
-                <b-col cols="12" sm="12" md="3">
-                    <img style="width: 100%; cursor:pointer;" src="../../assets/images/product2.jpg">
-                </b-col>
-                <b-col cols="12" sm="12" md="3">
-                    <img style="width: 100%; cursor:pointer;" src="../../assets/images/product3.jpg">
-                </b-col>
-                <b-col cols="12" sm="12" md="3">
-                    <img style="width: 100%; cursor:pointer;" src="../../assets/images/product4.jpg">
-                </b-col>
+                <div class="slider">
+                    <div class="slider-row"></div>
+                </div>
             </b-row>
-
-
         </b-container>
     </section>
 </template>
@@ -34,6 +23,29 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+    $img-w: 3000px;
+    $img-h: 732px;
+    $shrink: 2;
+    $ratio: 1 / $shrink;
+    $speed: 50s;
 
+    .slider {
+        //position: absolute;
+        width: 100%;
+        //top: calc(50% - #{$img-h * $ratio / 2});
+        overflow: hidden;
+    .slider-row {
+        width: $img-w * $ratio;
+        height: $img-h * $ratio;
+        background-image: url("../../assets/images/todos.png");
+        background-size: $img-w * $ratio $img-h * $ratio;
+        animation: slide $speed linear infinite;
+    }
+    }
+
+    @keyframes slide {
+        from { background-position-x: 0; }
+        to   { background-position-x: -$img-w * $ratio; }
+    }
 </style>
