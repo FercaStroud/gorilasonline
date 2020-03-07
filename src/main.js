@@ -9,6 +9,7 @@ import VueMouseParallax from 'vue-mouse-parallax'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import '@/assets/styles/styles.scss'
+import 'github-fork-ribbon-css/gh-fork-ribbon.css'
 
 Vue.use(VueMouseParallax)
 Vue.use(BootstrapVue)

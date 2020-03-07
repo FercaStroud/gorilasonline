@@ -1,4 +1,4 @@
-# www
+# Gorilas Online
 
 ## Project setup
 ```

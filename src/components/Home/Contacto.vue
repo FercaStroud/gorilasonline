@@ -34,7 +34,7 @@
                     <div class="russo go-color left-mid-pos"
                          style="letter-spacing:3px;">
                         ¿QUIERES COTIZAR?<br/>
-                        <a style="color: white;" href="mailto:hola@appsgorilasonline.com">hola@appsgorilasonline.com</a>
+                        <a style="color: white;" href="mailto:info@appsgorilasonline.com">info@appsgorilasonline.com</a>
                     </div>
                     <b-row>
                         <!--<b-col sm="12" md="4">

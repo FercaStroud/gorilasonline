@@ -43,7 +43,10 @@ a:hover {
   text-decoration: none;
   color: $go-color !important;
 }
-
+.github-fork-ribbon.right-bottom:before {
+  background-color: $go-color;
+  color:white;
+}
 section {
   height: 100vh;
 }
@@ -93,6 +96,9 @@ section {
 }
 
 @media (max-width: 821px) {
+  .github-fork-ribbon{
+    display:none;
+  }
   #title-bg-text {
     font-size: 7vw;
     text-align: center;

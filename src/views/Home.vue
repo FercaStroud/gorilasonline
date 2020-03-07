@@ -1,5 +1,14 @@
 <template>
     <div class="home">
+        <!-- TOP RIGHT RIBBON: START COPYING HERE -->
+        <a class="github-fork-ribbon right-bottom"
+           target="_blank"
+           href="https://github.com/cardenas413/gorilasonline"
+           data-ribbon="Fork us on GitHub" title="Fork us on GitHub">
+            Fork us on GitHub!
+        </a>
+        <!-- TOP RIGHT RIBBON: END COPYING HERE -->
+
         <Slider/>
         <About/>
         <Products/>
@@ -9,8 +18,6 @@
 </template>
 
 <script>
-    // @ is an alias to /src
-
     import Slider from "../components/Home/Slider";
     import Contacto from "../components/Home/Contacto";
     import Tecnologias from "../components/Home/Tecnologias";
