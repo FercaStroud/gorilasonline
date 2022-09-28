@@ -17,10 +17,12 @@
                     <b-nav-item href="#portafolio"><span class="go-color">Po</span>rtafolio</b-nav-item>
                     <b-nav-item href="#tecnologia"><span class="go-color">Te</span>cnología</b-nav-item>
                     <b-nav-item style="float: left;">
-                        <i @click="openURL('https://www.facebook.com/GorilasOnline/')"
+                        <i @click="openURL('https://www.facebook.com/GorilasOnlineLATAM/')"
                            class="fab fa-facebook"></i>
                         <i @click="openURL('https://twitter.com/gorilasonline')"
                            class="fab fa-twitter"></i>
+                        <i @click="openURL('https://instagram.com/gorilasonline')"
+                           class="fab fa-instagram"></i>
                     </b-nav-item>
                 </b-navbar-nav>
             </b-modal>
